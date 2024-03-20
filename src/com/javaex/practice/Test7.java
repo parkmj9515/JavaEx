@@ -9,15 +9,20 @@ public class Test7 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("키와 몸무게를 입력하세요");
-		System.out.println("키:");
-		int m = scanner.nextInt();
 		
-		System.out.println("몸무게:");
-		int kg = scanner.nextInt();
+		double m;
+			System.out.println("키:");
+			m = scanner.nextInt();
+		 	
+		double kg;
+			System.out.println("몸무게:");
+			kg = scanner.nextInt();
 		
-		int	bmi;
-			bmi= kg / m*m;
+		
+		double bmi;
+			bmi = kg / (m*m) * 10000;
 			
+		
 		if(bmi <= 18.5) {
 			System.out.println("저체중입니다");
 		}else if (bmi >=24.9) {
