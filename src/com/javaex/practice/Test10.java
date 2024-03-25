@@ -15,7 +15,7 @@ public class Test10 {
 		int num2 = scanner.nextInt();
 			
 		
-		
+		scanner.close();
 		}
 	}
 

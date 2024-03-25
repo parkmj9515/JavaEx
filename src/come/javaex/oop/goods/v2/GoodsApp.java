@@ -32,8 +32,4 @@ public class GoodsApp {
 	notebook.showInfo();
 	cup.showInfo();
 	}
-
-	public static void main(String[] args) {
-		
-
 }

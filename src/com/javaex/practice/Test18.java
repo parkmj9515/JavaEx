@@ -27,7 +27,7 @@ public class Test18 {
 		
 		}
 		
-		
+		sc.close();
 	}
 
 }
