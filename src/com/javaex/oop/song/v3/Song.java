@@ -3,8 +3,8 @@ package com.javaex.oop.song.v3;
 //	v3.this 생성자
 
 
-public class void Song {
-
+public class Song {
+	// 필드
 	private String Title;	
 	private String art;
 	private String alb;
@@ -12,22 +12,28 @@ public class void Song {
 	private int year;
 	private String track;
 	
-//	name 필드 생성자
-	public Song(String Title, String art) {
+	// constructor
+	public Song(String Title,String art) {
 		this.Title = Title;
 		this.art = art;
-		System.out.println("name 필드 초기화 생성자");
 	}
 	
+//	name 필드 생성자
+//	public Song(String Title, String art) {
+//		this.Title = Title;
+//		this.art = art;
+//		System.out.println("name 필드 초기화 생성자");
+//	}
+	
 //	천체 필드 생성자
-	public Song(String Title,String art) {
-		
-		this(Title);	
-		this(art);
-		System.out.println("전체 필드 초기화 생성자");
+//	public Song(String Title,String art) {
+//		
+//		this(Title);	
+//		this(art);
+//		System.out.println("전체 필드 초기화 생성자");
 		//	객체 초기화를 담당
 
-	}
+//	}
 	
 	
 //	생성자	
@@ -35,8 +41,8 @@ public class void Song {
 			String comp,String track,int year) {
 		
 		//	객체 초기화를 담당
-		this.Title = Title;
-		this.art = art;
+//		this.Title = Title;
+//		this.art = art;
 		this.alb = alb;
 		this.comp = comp;
 		this.year = year;

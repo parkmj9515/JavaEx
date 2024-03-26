@@ -6,7 +6,7 @@ public class Test6 {
 		// TODO Auto-generated method stub
 		char c[] = {'T','h','i','s','i','s','a','p','e','n','c','i','l'};
 		
-		System.out.printf()
+		System.out.printf();
 				
 				
 	}
