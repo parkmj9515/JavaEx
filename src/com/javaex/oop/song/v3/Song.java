@@ -24,15 +24,15 @@ public class Song {
 //		this.art = art;
 //		System.out.println("name 필드 초기화 생성자");
 //	}
-	
-//	천체 필드 생성자
+//	
+////	천체 필드 생성자
 //	public Song(String Title,String art) {
 //		
 //		this(Title);	
 //		this(art);
 //		System.out.println("전체 필드 초기화 생성자");
-		//	객체 초기화를 담당
-
+//		//	객체 초기화를 담당
+//
 //	}
 	
 	
@@ -41,8 +41,8 @@ public class Song {
 			String comp,String track,int year) {
 		
 		//	객체 초기화를 담당
-//		this.Title = Title;
-//		this.art = art;
+		this.Title = Title;
+		this.art = art;
 		this.alb = alb;
 		this.comp = comp;
 		this.year = year;
@@ -51,12 +51,7 @@ public class Song {
 
 	
 //geeter	
-public String getTitle() {
-	return Title;
-}
-public String getart() {
-	return art;
-}
+
 public String getalb() {
 	return alb;
 }
