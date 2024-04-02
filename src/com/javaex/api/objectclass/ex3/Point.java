@@ -35,7 +35,7 @@ public class Point implements Cloneable {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) {		// obj 외부에서 들어오는 비교대상 객체
 		if (obj instanceof Point) {
 
 			Point other = (Point) obj;
@@ -46,7 +46,7 @@ public class Point implements Cloneable {
 				return false;
 			}
 		}
-//		obj가 Point가 아니면
+//		//	부모에게 비교 방법을 위임
 		return super.equals(obj);
 	}
 

@@ -37,7 +37,7 @@ public class Scoreboard implements Cloneable {
 		Scoreboard clone = null;
 
 		try {
-			clone = (Scoreboard) clone();
+			clone = (Scoreboard) clone();	//	얕은복제
 		} catch (CloneNotSupportedException e) {
 			// 예외 로그 출력
 			e.printStackTrace();
