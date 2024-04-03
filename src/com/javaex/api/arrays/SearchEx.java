@@ -6,12 +6,13 @@ public class SearchEx {
 
 	public static void main(String[] args) {
 		//	1.	기본 타입 검색
-		basicSearch();
+//		basicSearch();
 		
 		
 		//	2.	사용자 정의 객체의 검색
 		customClassSearch();
 	}
+	//	기본 타입 검색
 	private static void basicSearch() {
 		//	java Arrays의 검색 기능은 binarysearch 방식으로 구현
 		int [] nums = {6, 4, 3, 5, 7, 9, 8, 2, 1, 10};
@@ -35,7 +36,7 @@ public class SearchEx {
 		System.out.println("Java의 인덱스:"+ index);
 		
 	}
-	
+	//	사용자 정의 객체의 검색
 	private static void customClassSearch() {
 		Member m1 = new Member("홍길동");
 		Member m2 = new Member("고길동");

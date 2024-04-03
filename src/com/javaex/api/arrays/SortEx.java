@@ -47,7 +47,7 @@ public class SortEx {
 				//	3.사용자 정의 클래스 정렬
 					customClassSort();
 	}
-	//	기본정렬
+//	기본정렬
 	private static void basicSort() {
 		int[] scores = {80,50,30,90,75,88,77};
 		System.out.println("배열 원본:"+Arrays.toString(scores));	//	작은것 > 큰것 오름차순( Ascending) , 큰것 > 작은것 내림차순 ( Desending)
@@ -57,7 +57,7 @@ public class SortEx {
 		System.out.println("오름차순 정렬"+Arrays.toString(scores));
 	}
 	
-	//	역순정렬
+//	역순정렬(내림차순)
 	private static void basicDescSort() {
 		Integer[] scores = {80,50,30,90,75,88,77};	
 		System.out.println("배열 원본:"+Arrays.toString(scores));
@@ -69,7 +69,7 @@ public class SortEx {
 		//	객체 내부의 Comparerator로 객체의 선후 관계를 규정해야 하기 떄문에 
 		//	프리미티브 타입은 역순정렬 될수 없다
 	}
-	//	사용자 정의 클래스 정렬
+//	사용자 정의 클래스 정렬
 	private static void customClassSort() {
 		Member[] members = {new Member("홍길동"),
 							new Member("고길동"),

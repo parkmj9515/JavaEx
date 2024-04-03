@@ -44,7 +44,7 @@ public class StringEx {
 		System.out.println("toUpperCase:" + str.toUpperCase()); // 대문자로 변환
 		System.out.println("toLowCase:" + str.toLowerCase()); // 소문자로 변환
 
-		// 검색
+		// 검색*중요(indexOf 사용법)
 		System.out.println("charAt:" + str.charAt(5)); // 5번 인덱스의 글자
 
 		int index = 0; // index 저장 변수
@@ -62,8 +62,8 @@ public class StringEx {
 
 		index = str.lastIndexOf("Programming"); // 검색을 뒤에서 부터 찾기
 		System.out.println("lastIndexOf:" + index);
-//-----------------------------------------------------------------------------------------------------------
-		System.out.println("str:" + str);
+//--------------------------------------- 새로운 시작 --------------------------------------------------
+		System.out.println("str:" + str);		//	원본
 		//	부분 문자열 추출 > sub String
 		System.out.println("substring:"+str.substring(5));	//	5번 스트링부터 끝까지 추출 > 새객체로 추가해주기때문에 원본보존
 		System.out.println("substring:"+str.substring(5,16));	//	5 ~ 16-1 까지 추출
