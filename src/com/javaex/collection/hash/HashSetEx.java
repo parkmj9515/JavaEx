@@ -30,11 +30,34 @@ class Student {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+
+	
 
 		//	toString
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + "]";
+	}
+	//	값의 동일성을 판별을 위한 equals 메서드 오버라이드
+
+	//	객체의 동등성 비교를 위한 두 개의 관문
+	//	1.HashCode()
+	//	2.equals()
+	@Override
+	public int hashCode() {
+		//	Hash 함수의 로직 : 학번을 기준으로
+		return id;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Student) {
+			Student other = (Student)obj;
+			return id == other.id && 
+					name == other.name;
+		}
+		return super.equals(obj);
 	}
 	
 	
@@ -129,6 +152,7 @@ public class HashSetEx {
 		System.out.println("차집합: " + setA);
 		System.out.println(setA.equals(evens));
 	}
+	//	객체 자료형
 	private static void usingHashSetWithCustom() {
 		HashSet<Student> hs = new HashSet<>();
 		
@@ -136,6 +160,8 @@ public class HashSetEx {
 		Student s2 = new Student(20,"홍길동");
 		Student s3 = new Student(30,"고길동");
 		Student s4 = new Student(30,"고길동");
+		
+		//	s3와 s4가 이름도같고 학번도 같으니 두 객체를 동등객체로 판정하는 로직만들기
 		
 		hs.add(s1);	hs.add(s2);	hs.add(s3);	hs.add(s4);
 		System.out.println("학생부: "+hs);
