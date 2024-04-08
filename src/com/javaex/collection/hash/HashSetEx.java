@@ -70,10 +70,10 @@ public class HashSetEx {
 //		usinghashSet();
 
 		// 집합 연산
-//		setOperation();
+		setOperation();
 
 		// hash set 사용법(객체 자료형)
-		usingHashSetWithCustom();
+//		usingHashSetWithCustom();
 	}
 
 	private static void usinghashSet() {
