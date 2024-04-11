@@ -14,7 +14,7 @@ public class Test16 {
 		num = sc.nextInt();
 		
 		int x;
-			x = f(x)(x*x*x) -9(x)+2, x<=0;
+		
 		
 		
 		

@@ -29,7 +29,7 @@ public class Test17 {
 			System.out.println("잘못 입력했습니다");
 			break;
 		}
-			sc.close();1
+			sc.close();
 	}
 	
 

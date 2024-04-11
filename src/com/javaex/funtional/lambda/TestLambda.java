@@ -19,12 +19,12 @@ public class TestLambda {
 		// 람다 호출법
 //		testCallLambda();
 		// 람다에 파라미터를 전달하는 방법
-//		testLambdaParams(10,20,(x,y)-> x+y);
+		testLambdaParams(10,20,(x,y)-> x+y);
 		// 고계 함수 : 특정 함수를 거쳐서 함수 내부 에서 로직 이 생성되어 반환되는 함수
 		// 함수를 반환하는 함수
-		MyFunction hof = testHOF();
-		System.out.println("HOF: " + hof.getResult(10, 20));
-		System.out.println("HOF: " + testHOF().getResult(10, 20));
+//		MyFunction hof = testHOF();
+//		System.out.println("HOF: " + hof.getResult(10, 20));
+//		System.out.println("HOF: " + testHOF().getResult(10, 20));
 	}
 
 	private static void testCallLambda() {
@@ -62,7 +62,7 @@ public class TestLambda {
 		System.out.println(f.getResult(x, y));
 	}
 
-	// 고꼐함수
+	// 고계함수
 	private static MyFunction testHOF() {
 		// HOF : Higher Order Function :고계함수
 		// 람다 함수를 이용 메서드의 함수를 반환 가능
