@@ -21,10 +21,11 @@ public class FileClassEx {
 		File newDir = new File(rootPath + "\\subdir \\subdir2");	//	파일(디렉터리) 정보
 		
 		if(! newDir.exists());	{//	존재 여부 확인 
-		if(newDir.mkdir()) {	//	실제 생성
+		if(newDir.mkdirs()) {	//	실제 생성
 			System.out.println(newDir + "을 생성하였습니다");
 		}		
 	}
+		
 		printFileInfo(f);
 		
 		//	새로 생성한 files \\ subdir 디렉터리에 새파일 myfile.txt를 만들자
@@ -33,16 +34,16 @@ public class FileClassEx {
 		//	파이 객체 생성 > 정보 객체 생성하는것이지 파일을 만드는것은 아니다
 		if(!newFile.exists()) {	//	존재 여부 확인 후 없으면 생성
 			try {
-			newFile.createNewFile();	//	실제 파일 생성
-			}catch(IOException e) {
+				newFile.createNewFile();	//	실제 파일 생성
+			} catch(IOException e) {
 				System.err.println("파일을 만들지 못했어요");
 			}
-		}
-		//	목록 출력
-		printFileInfo(f);
-		
-		//	파일 삭제
-//		newFile.delete();
+		}		
+				//	목록 출력
+				printFileInfo(f);
+						
+				//	파일 삭제
+				newFile.delete();
 			
 }
 
