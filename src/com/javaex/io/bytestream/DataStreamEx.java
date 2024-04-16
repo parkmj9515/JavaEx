@@ -61,7 +61,7 @@ public class DataStreamEx {
 			)
 		{
 			//	출력된 순서와 같은 순서
-			for(int i =0; i < 2; i++) {
+			for(int i =0; i <= 2; i++) {
 				
 				String s = dis.readUTF();	//	String
 				boolean b = dis.readBoolean();	//	boolean
