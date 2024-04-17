@@ -7,8 +7,8 @@ public class Test2 {
 		double[] doubleArray = {1.2, 3.3, 6.7};
 		
 		
-		for ( double i= 0.0; i < doubleArray.length; i++) {
-			System.out.println(i);
+		for (double i= 0; i < doubleArray.length; i++) {
+			System.out.println(doubleArray[(int) i]);
 				
 					
 		}
